@@ -21,7 +21,7 @@ When we remount a filesystem by mount() system call, the kernel function __mac_m
 
 ![mount_syscall]({{ site.baseurl }}/assets/image/apfs-remount/mount_syscall.png)
 
-Before iOS 11.3, the most common method to remount root filesystem aims at bypassing this sandbox check, which is proposed by Xerub. This method removes ROOTFS, RDONLY, NOSUID flags in root filesystem’s mount flag and then remounts, which is thoroughly described in Jonathan Levin’s HITB 18 AMS talk.
+Before iOS 11.3, the most common method to remount root filesystem aims at bypassing this sandbox check, which is proposed by [Luca](https://twitter.com/qwertyoruiopz) in [yalu102](https://github.com/kpwn/yalu102). This method removes ROOTFS, RDONLY, NOSUID flags in root filesystem’s mount flag and then remounts, which is thoroughly described in Jonathan Levin’s HITB 18 AMS talk.
 
 
 ## 0x02 Basics of iOS filesystem
